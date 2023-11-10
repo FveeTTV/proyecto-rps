@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>proyecto</title>
+</head>
+<body>
+    <header>
+        <h1>Piedra papel o tijeras</h1>
+    </header>
+    <main>
+        <p class="instrucciones" id="instrucciones">ganás si llegas a 3 puntos</p>
+
+        <div class="marcador">
+            <p class="nombre nombre-jugador">jugador</p>
+            <p class="nombre nombre-computadora">computadora</p>
+            <p class="puntos">
+                <span id="puntos-usuarios">0</span>
+                <span>-</span>
+                <span id="puntos-computadoras">0</span>
+            </p>
+        </div>
+        <div class="rps" id="rps">
+            <h2>elije sabiamente...</h2>
+            <div class="armas">
+                <button class="arma" id="piedra🥌">🥌</button>
+                <button class="arma" id="papel🧻">🧻</button>
+                <button class="arma" id="tijeras✂">✂</button>
+            </div>
+        </div>
+        <div class="mensaje disable" id="mensaje">
+            <p>
+                usaste <span class="eleccion" id="eleccion-usuario">papel🧻</span> <br>
+                y la compuadora uso <span class="eleccion" id="eleccion-computadora">piedra🥌</span>
+            </p>
+            <p id="gana-punto">ganaste un punto 👍</p>
+        </div>
+        <button class="reinicio" id="reiniciar">reiniciar juego</button>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

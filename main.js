@@ -82,7 +82,7 @@ function iniciarTurno(e){
         }
 
 
-        elegiTuArma.classList.add("disable");
+        arma.classList.add("disable");
         reiniciar.classList.remove("disable");
         reiniciar.addEventListener("click", reiniciarJuego);
 

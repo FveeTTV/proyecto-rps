@@ -2,12 +2,12 @@ let puntosUsuario = 0;
 let puntosPC = 0;
 
 
-let instrucciones = document.querySelector("#instruccioes");
+let instrucciones = document.querySelector("#instrucciones");
 let contenedorPuntosUsuario = document.querySelector("#puntos-usuarios");
 let contenedorPuntosPC = document.querySelector("#puntos-computadora");
 let mensaje = document.querySelector("#mensaje");
 let contenedorGanaPunto = document.querySelector("#gana-punto");
-let elegiTuArma = document.querySelectorAll("#elegi-tu-arma");
+let elegiTuArma = document.querySelectorAll("#armas");
 
 
 let contenedorEleccionUsuario = document.querySelector("#eleccion-usuario");

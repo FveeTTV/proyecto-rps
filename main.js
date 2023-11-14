@@ -101,7 +101,7 @@ function ganaUsuario() {
 
 
 function ganaPC() {
-    ganaPC++;
+    puntosPC++;
     contenedorPuntosPC.innerText = puntosPC;
     contenedorGanaPunto.innerText = "¡La computadora gana un punto! 😭"
 }

@@ -35,9 +35,9 @@ function iniciarTurno(e){
     if (eleccionPC === 0) {
         eleccionPC = "piedra🥌";
     } else if (eleccionPC === 1) {
-        eleccionPC = "papel🧻"
+        eleccionPC = "papel🧻";
     } else if (eleccionPC === 2) {
-        eleccionPC = "tijera✂"
+        eleccionPC = "tijera✂";
     }
 
 

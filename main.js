@@ -48,13 +48,13 @@ function iniciarTurno(e){
 
 
     if (
-        (eleccionUsuario === "piedra🥌" && eleccionPC === "tijera✂")||
+        (eleccionUsuario === "piedra🥌" && eleccionPC === "tijeras✂")||
         (eleccionUsuario === "tijeras✂" && eleccionPC === "papel🧻")||
         (eleccionUsuario === "papel🧻" && eleccionPC === "piedra🥌")
     ) {
         ganaUsuario();
     } else if (
-        (eleccionPC === "piedra🥌" && eleccionUsuario === "tijera✂")||
+        (eleccionPC === "piedra🥌" && eleccionUsuario === "tijeras✂")||
         (eleccionPC === "tijeras✂" && eleccionUsuario === "papel🧻")||
         (eleccionPC === "papel🧻" && eleccionUsuario === "piedra🥌")
     ) {

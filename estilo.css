@@ -10,12 +10,6 @@
     --clr-purple: #27233A;
 }
 
-body {
-    --crl-gold:#DCC48E;
-    --crl-beige:#EAEFD3;
-    --crl-purple:#27233A;    
-}
-
 body{
     background-color: var(--clr-purple);
     color:var(--clr-beige);
@@ -38,7 +32,8 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 5rem;
+    text-align: center;
 }
 
 .instrucciones{
@@ -77,12 +72,16 @@ main{
     font-size: 1.6rem;
 }
 
-.elegi-tu-arma h2 {
+.rps {
+    margin-bottom: 2rem;
+}
+
+.rps h2 {
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: .5rem;
 }
-.armaas {
+.armas {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -100,24 +99,36 @@ main{
 
 .mensaje {
     margin-bottom: 2rem;
-    line-height: .8em;
+    line-height: 1.8em;
 }
 
-.mensaje .eleccion {
+.mensaje .eleccion-usuario{
+    background-color: var(--clr-gold);
     color: var(--clr-purple);
-    background-color: var(--crl-gold);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
 }
 
-.btn {
+.mensaje .eleccion-computadora{
+    background-color: var(--clr-gold);
+    color: var(--clr-purple);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+}
+
+.reiniciar {
     border: 0;
     line-height: 1;
     background-color: var(--clr-beige);
     color: var(--clr-purple);
     font-size: 1.2rem;
     padding: .5rem;
+    border-radius: .5rem;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 .disabled {

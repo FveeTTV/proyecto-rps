@@ -7,7 +7,7 @@ let contenedorPuntosUsuario = document.querySelector("#puntos-usuarios");
 let contenedorPuntosPC = document.querySelector("#puntos-computadora");
 let mensaje = document.querySelector("#mensaje");
 let contenedorGanaPunto = document.querySelector("#gana-punto");
-let elegiTuArma = document.querySelectorAll("#armas");
+let elegiTuArma = document.querySelectorAll("#rps");
 
 
 let contenedorEleccionUsuario = document.querySelector("#eleccion-usuario");
@@ -64,7 +64,7 @@ function iniciarTurno(e){
     }
 
 
-    mensaje.classList.remove("disable");
+    mensaje.classList.remove("disabled");
     contenedorEleccionUsuario.innerText = eleccionUsuario;
     contenedorEleccionPC.innerText = eleccionPC;
 
@@ -82,8 +82,8 @@ function iniciarTurno(e){
         }
 
 
-        arma.classList.add("disable");
-        reiniciar.classList.remove("disable");
+        rps.classList.add("disabled");
+        reiniciar.classList.remove("disabled");
         reiniciar.addEventListener("click", reiniciarJuego);
 
 
@@ -115,10 +115,9 @@ function empate () {
 
 
 function reiniciarJuego () {
-    reiniciar.classList.add("disable");
-    elegiTuArma.classList.remove("disable");
-    mensaje.classList.add("disable");
-
+    reiniciar.classList.add("disabled");
+    rps.classList.remove("disabled");
+    mensaje.classList.add("disabled");
 
     puntosUsuario = 0; 
     puntosPC = 0; 
@@ -129,6 +128,5 @@ function reiniciarJuego () {
 
 
     instrucciones.innerText = "El primero en llegar a 5 puntos gana."
-
 
 }
